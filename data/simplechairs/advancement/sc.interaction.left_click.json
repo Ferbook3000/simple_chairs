@@ -1,0 +1,21 @@
+{
+	"criteria": {
+		"requirement":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions": {
+				"entity":{
+					"type":"minecraft:interaction",
+					"nbt":"{Tags:[\"simple.chairs\"]}"
+				},
+				"player":{
+					"flags":{
+						"is_sneaking":true
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function":"simplechairs:start_remove_chair"
+	}
+}
